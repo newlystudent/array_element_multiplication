@@ -12,7 +12,6 @@ void array_copy(int *arr1, int *arr2, int size);
 void array_operation(int *arr1, int *arr2, int size);
 void print_array(int *arr, int size);
 void input_debug(int *arr, int size);
-void output_debug(int *arr, int size);
 
 //Main function :
 int main()
@@ -29,7 +28,6 @@ int main()
     array_operation(primaryArray,secondaryArray,arraySize);
     print_array(primaryArray,arraySize);
     // input_debug(primaryArray,arraySize);// Only Uncomment This if you need to debug the Input
-    // output_debug(secondaryArray,arraySize); //Only Uncomment This if you need to debug the Output
     return 0;
 }
 //End of main function
@@ -91,15 +89,3 @@ void input_debug(int *arr, int size)
     }
     cout<<endl;
 }
-
-// Debugging the output : 
-void output_debug(int *arr, int size)
-{
-    for(int i = 0; i<size;i++)
-    {
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl;
-}
-
-// End of function definition
